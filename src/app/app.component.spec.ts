@@ -7,6 +7,12 @@ describe('AppComponent', () => {
     imports: [RouterTestingModule],
     declarations: [AppComponent]
   }));
+  
+  const fixture = TestBed.createComponent(AppComponent);
+  const app = fixture.componentInstance;  
+  const title = ['app.title']
+
+
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -17,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'hotelinventoryapp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hotelinventoryapp');
+    expect(['title']).toEqual('hotelinventoryapp');
   });
 
   it('should render title', () => {
